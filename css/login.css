@@ -6,6 +6,9 @@
 
 body {
   height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: whitesmoke;
@@ -23,13 +26,10 @@ h5 {
 }
 
 .centered-container {
-  position: fixed;
   width: 440px;
   height: 380px;
-  top: 50%;
-  left: 50%;
-  margin-top: -190px;
-  margin-left: -220px;
+  margin-top: 5%;
+  margin-bottom: 10px;
 }
 
 .form-centered {
@@ -82,6 +82,8 @@ input[type=password], input[type=email] {
   margin-bottom: 10%;
   width: 90%;
   height: 35px;
+  margin-left: 5px;
+  margin-right: 5px;
   border-radius: 6px;
   border-width: 1px;
   border-color: black;
@@ -101,4 +103,34 @@ input[type=button] {
 
 .other-centered input {
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 500px) {
+
+  body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+  }
+
+  .centered-container {
+
+    width: 70%;
+    height: 90%;
+    align-self: center;
+  }
+
+  .form-centered {
+    padding-top: 8%;
+    padding-bottom: 12%;
+    align-self: center;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  
 }

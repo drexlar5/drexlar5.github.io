@@ -270,13 +270,13 @@ footer {
 
 @media screen and (max-width: 768px) {
 
-  .icon-toggle {
+  /* .icon-toggle {
     visibility: visible;
   }
 
   .header-right h3 {
     visibility: hidden;
-  }
+  } */
 
   .md-section {
     flex-direction: column;
@@ -288,6 +288,7 @@ footer {
     grid-gap: 50px 10px;
     grid-template-columns: auto auto;
     padding: 10px;
+    margin-bottom: 15px;
   }
 
   .main { 
@@ -317,6 +318,7 @@ footer {
     grid-gap: 50px 10px;
     grid-template-columns: auto;
     padding: 10px;
+    margin-bottom: 15px;
   }
 }
 
