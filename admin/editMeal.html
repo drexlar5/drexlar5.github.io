@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Edit Meal | Meal Booking App</title>
+</head>
+<body>
+  <header>
+    <div class="header-right">
+      <i class="fas fa-bars icon-toggle" onclick="toggleOpen()"></i>
+      <H2>Meal Comp</H2>
+    </div>
+    <button class="logout">Logout</button>
+  </header>
+ <div class="container">
+  <aside id="menu">
+    <div>
+      <a class="nav-link" href="admin.html">Dashboard</a>
+      <a class="nav-link" href="addMeals.html">Add Meal</a>
+      <a class="nav-link" href="viewMeals.html">View Meals</a>
+      <a class="nav-link" href="addMenu.html">Add Menu</a>
+    </div>
+    <div>
+      <a class="order-link" href="orderHistory.html">Order History</a>
+      <a class="order-link" href="orders.html">Orders</a>
+    </div>
+  </aside>
+  <div class="orders">
+    <div class="view">
+      <div class="view-sub">        
+      <h2>Edit Meal</h2> 
+      <!-- <h4>Daily meal summary</h4> -->
+      </div>
+      <h4 class="admin-name">Hello, Michael</h4>
+    </div>
+    <hr>
+    <div class="bread-crumb">
+      <h4>Admin /</h4>
+      <h6>Edit Meal</h6>
+    </div>
+    <div class="add-meal">
+      <form class="form-add-meal" action="" method="post">                  
+          <div class="custom-select" >
+          <h5>Menu: </h5>  
+            <select>
+              <option value="nothing">Select a Meal Menu</option>
+              <option value="Rice">Rice</option>
+              <option value="Beans">Beans</option>
+              <option value="Spargetti">Spargetti</option>
+              <option value="Swallow">Swallow</option>
+            </select>
+        </div>
+        <div>
+          <h5>Meal Name: </h5>
+          <input type="text" name="name" id="name">
+        </div>
+        <div>
+          <h5>Meal Description: </h5>
+          <textarea type="text" name="description" id="description"></textarea>
+        </div>
+        <div>
+          <h5>Upload Image:</h5>
+          <input type="file" name="image" id="image">
+        </div>
+        <div>
+          <h5>Amount: </h5>
+          <input type="number" name="price" id="price">
+        </div>
+        <input type="submit" value="Update">
+      </form>
+    </div>
+  </div>
+ </div>
+ <script src="../src/app.js"></script>
+</body>
+</html>
